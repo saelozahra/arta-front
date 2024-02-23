@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+    <script src="./js/jquery-3.5.1.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+</head>
+<body>
+    <header id="lg_header">
+        <div class="header_main">
+            <div class="header_logo">
+                <a href="#">
+                    <img src="./images/logo.png" alt="Arta Hotel">
+                    <span>هتل آرتـا</span>
+                </a>
+            </div>
+            <ul class="header_main_menu">
+                <li>
+                    <a href="#">درباره هتل</a>
+                </li>
+                <li>
+                    <a href="#">رزرو آنلاین</a>
+                </li>
+                <li>
+                    <a href="#">تور مجازی</a>
+                </li>
+                <li>
+                    <a href="#">امکانات هتل</a>
+                </li>
+                <li>
+                    <a href="#">فرصت‌های شغلی</a>
+                </li>
+                <li>
+                    <a href="#">تماس با ما</a>
+                </li>
+            </ul>
+        </div>
+        <div class="header_auth">
+            <a href="#">ورود همکاران</a>
+        </div>
+        <div class="header_socials">
+            <a href="#">
+                <img src="./images/instagram_icon.svg" alt="">
+            </a>
+            <a href="#">
+                <img src="./images/telegram_icon.svg" alt="">
+            </a>
+            <a href="#">
+                <img src="./images/whatsapp_icon.svg" alt="">
+            </a>
+        </div>
+    </header>
+    <header id="sm_header">
+        <div class="sm_header_wrapper">
+            <div class="sm_header_right">
+                <div class="sm_header_logo">
+                    <img src="./images/logo.png" alt="">
+                    <div class="sm_header_title">هتل آرتا</div>
+                </div>
+                <div class="header_socials">
+                    <a href="#">
+                        <img src="./images/instagram_icon.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="./images/telegram_icon.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="./images/whatsapp_icon.svg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="sm_header_btn" onclick="showMenu()">
+                <img src="./images/menu_icon.svg" alt="">
+            </div>
+            <div class="sm_menu_frame">
+                <div class="close_menu" onclick="hideMenu()">×</div>
+                <ul class="sm_header_menu">
+                    <li>
+                        <a href="#">درباره هتل</a>
+                    </li>
+                    <li>
+                        <a href="#">رزرو آنلاین</a>
+                    </li>
+                    <li>
+                        <a href="#">تور مجازی</a>
+                    </li>
+                    <li>
+                        <a href="#">امکانات هتل</a>
+                    </li>
+                    <li>
+                        <a href="#">فرصت‌های شغلی</a>
+                    </li>
+                    <li>
+                        <a href="#">تماس با ما</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header> 
+    
+    <div id="top" class="container_fluid">
+        <div class="container_sm">
+            <div class="top_slogan">
+                اقامتی بی‌نظیر در
+                <br>
+                <span>مروارید قشم</span>
+            </div>
+        </div>
+    </div>
+    <div id="reservation" class="container_fluid">
+        <div class="reservation_shortcut container_sm">
+            <form id="reservation_shortcut_form" action="">
+                <div class="reservation_shortcut_field">
+                    <label for="">تعداد میهمانان</label>
+                    <div class="reservation_shortcut_input">
+                        <input type="text" value="۱ نفر">
+                        <img src="./images/circle_down_btn.svg" alt="">
+                    </div>
+                </div>
+                <div class="reservation_shortcut_field">
+                    <label for="">تاریخ ورود</label>
+                    <div class="reservation_shortcut_input">
+                        <input type="text" value="۳۱ شهریور">
+                        <img src="./images/circle_down_btn.svg" alt="">
+                    </div>
+                </div>
+                <div class="reservation_shortcut_field">
+                    <label for="">تاریخ خروج</label>
+                    <div class="reservation_shortcut_input">
+                        <input type="text" value="۳ آبان">
+                        <img src="./images/circle_down_btn.svg" alt="">
+                    </div>
+                </div>
+                <div class="reservation_shortcut_field">
+                    <button type="submit">
+                        <img src="./images/search_icon.svg" alt="">
+                        <span>رزرو اتاق</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div id="about_hotel" class="container_fluid">
+        <div class="container">
+            <div class="about_hotel_wrapper">
+                <div class="about_hotel_info">
+                    <div class="about_hotel_title">هتل آرتا</div>
+                    <img src="./images/4star.png" alt="">
+                    <p class="about_hotel_content">
+                        هتل آرتا در مرکز شهر قشم به فاصله 200 متری از ساحل آبهای نیلگون خلیج فارس واقع شده است. این هتل با مرکز خرید سیتی سنتر یک و دو ، بازار ستاره و پارک ساحلی زیتون پنج دقیقه پیاده روی و تا اسکله مسافری شهید ذاکری کمتر از پنج دقیقه با اتوموبیل می باشد . مسافت هتل آرتا تا فرودگاه بین المللی قشم 50 کیلومتر می است.
+                        <br>
+                        این هتل مجلل در فروردین 1396 افتتاح شده و به دلیل زیبایی، راحتی و ساختار استاندارد <strong>مروارید قشم</strong> لقب گرفته است. 44 اتاق دو تخته و چهار سوییت یک خوابه که بعضا دارای چشم‌انداز دریا می‌باشند همراه با پرسنل خون‌گرم و مهربان، زینت بخش تعطیلات شما خواهند بود و خاطره خوشی را در جزیره عجایب هفتگانه برای شما خلق می‌نمایند.
+                    </p>
+                    <div class="about_hotel_more">
+                        <a href="#">بیشتر</a>
+                    </div>
+                </div>
+                <div class="about_hotel_image">
+                    <img src="./images/content/about_pic.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="hotel_features" class="container_fluid">
+        <div class="container_sm">
+            <div class="hotel_features_wrapper">
+                <div>
+                    <div class="hotel_feature_item">
+                        <img src="./images/features/rooms.png" alt="">
+                        <div class="hotel_feature_title">اتاق‌ها و سوئیت‌ها</div>
+                        <div class="hotel_feature_desc">
+                            انواع اتاق‌ها و سوئیت‌های مختلف با چشم‌اندازی بی‌نظیر
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="hotel_feature_item">
+                        <img src="./images/features/parking.png" alt="">
+                        <div class="hotel_feature_title">پارکینگ شبانه‌روزی</div>
+                        <div class="hotel_feature_desc">
+                            پارکینگ شبانه‌روزی رایگان بدون نیاز به رزرو پیشین
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="hotel_feature_item">
+                        <img src="./images/features/internet.png" alt="">
+                        <div class="hotel_feature_title">اینترنت رایگان</div>
+                        <div class="hotel_feature_desc">
+                            اینترنت پرسرعت رایگان در لابی و طبقات
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="hotel_feature_item">
+                        <img src="./images/features/gym.png" alt="">
+                        <div class="hotel_feature_title">باشگاه ورزشی</div>
+                        <div class="hotel_feature_desc">
+                            باشگاه ورزشی مجهز و مدرن با تمامی دستگاه‌ها  
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="hotel_feature_item">
+                        <img src="./images/features/conference.png" alt="">
+                        <div class="hotel_feature_title">اتاق جلسات</div>
+                        <div class="hotel_feature_desc">
+                            اتاق جلسات مجهز مناسب جهت برگزاری انواع همایش‌ها
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="hotel_feature_item">
+                        <img src="./images/features/laundry.png" alt="">
+                        <div class="hotel_feature_title">خدمات خشک‌شویی</div>
+                        <div class="hotel_feature_desc">
+                            خدمات لاندری و خشکشویی کاملا بهداشتی
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="hotel_restaurant" class="container_fluid">
+        <div class="container hotel_restaurant_wrapper">
+            <div>
+                <div class="hotel_restaurant_preview">
+                    <div class="hotel_restaurant_content">
+                        <div class="hotel_restaurant_title">رستوران مانگرو</div>
+                        <div class="hotel_restaurant_desc">سرو انواع غذاهای ایرانی و بین‌المللی در فضایی دلنشین</div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="hotel_coffeeshop_preview">
+                    <div class="hotel_restaurant_content">
+                        <div class="hotel_restaurant_title">کافی‌شاپ افــرا</div>
+                        <div class="hotel_restaurant_desc">طعم قهوه‌ی رؤیایی و خلق خاطراتی تکرارنشدنی</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="hotel_rooms" class="container_fluid">
+        <div class="container_sm">
+            <div class="hotel_rooms_head">اتاق‌ها و سوئیت‌ها</div>
+            <div class="hotel_rooms_wrapper">
+                <div>
+                    <div class="hotel_rooms_item" data-item="twobeds">
+                        <img class="hotel_room_logo" src="./images/logo2.png" alt="">
+                        <div class="hotel_room_title">اتاق دوتخته</div>
+                    </div>
+                </div>
+                <div>
+                    <div class="hotel_rooms_item" data-item="twins">
+                        <img class="hotel_room_logo" src="./images/logo2.png" alt="">
+                        <div class="hotel_room_title">اتاق تویین</div>
+                    </div>
+                </div>
+                <div>
+                    <div class="hotel_rooms_item" data-item="suite">
+                        <img class="hotel_room_logo" src="./images/logo2.png" alt="">
+                        <div class="hotel_room_title">سوئیت</div>
+                    </div>
+                </div>
+                <div>
+                    <div class="hotel_rooms_item" data-item="twobeds">
+                        <img class="hotel_room_logo" src="./images/logo2.png" alt="">
+                        <div class="hotel_room_title">اتاق یک تخته</div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div id="gheshm" class="container_fluid">
+        <div class="gheshm_wrapper">
+            <div class="gheshm_item">
+                <img src="./images/festival.png" alt="">
+                <div class="gheshm_title">
+                    جشنواره‌ها
+                    <br>
+                    <span>و مسابقات</span>
+                </div>
+            </div>
+            <div class="gheshm_item">
+                <img src="./images/gardesh.png" alt="">
+                <div class="gheshm_title">
+                    گردشگری جزیره
+                    <br>
+                    <span>قشم</span>
+                </div>
+            </div>
+            <div class="gheshm_item">
+                <img src="./images/flight.png" alt="">
+                <div class="gheshm_title">
+                    اطلاعات پرواز
+                    <br>
+                    <span>قشم</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="articles" class="container_fluid">
+        <div class="container_sm">
+            <div class="articles_head">
+                <div class="articles_head_title">آخرین مطالب</div>
+                <a href="#">+ همه مطالب</a>
+            </div>
+            <div class="articles_wrapper">
+                <div class="article_item">
+                    <div class="article_image">
+                        <div class="article_cat">گردشگری</div>
+                        <a href="#">
+                            <img src="./images/content/blog1.png" alt="">
+                        </a>
+                    </div>
+                    <div class="article_info">
+                        <div class="article_info_item">
+                            <img src="./images/date_icon.svg" alt="">
+                            <span>۲۵ خرداد ۱۴۰۲</span>
+                        </div>
+                        <div class="article_info_item">
+                            <img src="./images/clock_icon.svg" alt="">
+                            <span>زمان مطالعه: ۳ دقیقه</span>
+                        </div>
+                    </div>
+                    <div class="article_title">
+                        <a href="#">چهل مکان دیدنی و پرطرفدار جزیره قشم</a>
+                    </div>
+                    <div class="article_excerpt">
+                        دیگر وقتش است جاهای دیدنی قشم را کشف کنید! اگر تابه‌حال به قشم نرفته‌اید بیشتر از این زمان را...
+                    </div>
+                </div>
+                <div class="article_item">
+                    <div class="article_image">
+                        <div class="article_cat">هتل آرتا</div>
+                        <a href="#">
+                            <img src="./images/content/blog2.png" alt="">
+                        </a>
+                    </div>
+                    <div class="article_info">
+                        <div class="article_info_item">
+                            <img src="./images/date_icon.svg" alt="">
+                            <span>۲۵ خرداد ۱۴۰۲</span>
+                        </div>
+                        <div class="article_info_item">
+                            <img src="./images/clock_icon.svg" alt="">
+                            <span>زمان مطالعه: ۳ دقیقه</span>
+                        </div>
+                    </div>
+                    <div class="article_title">
+                        <a href="#">آشنایی با امکانات باشگاه ورزشی هتل آرتا</a>
+                    </div>
+                    <div class="article_excerpt">
+                        ما در باشگاه ورزشی هتل آرتا همه‌ی دستگاه‌های مناسب برای انواع تفریحات ورزشی را فراهم کرده‌ایم
+                    </div>
+                </div>
+                <div class="article_item">
+                    <div class="article_image">
+                        <div class="article_cat">جزیره قشم</div>
+                        <a href="#">
+                            <img src="./images/content/blog3.png" alt="">
+                        </a>
+                    </div>
+                    <div class="article_info">
+                        <div class="article_info_item">
+                            <img src="./images/date_icon.svg" alt="">
+                            <span>۲۵ خرداد ۱۴۰۲</span>
+                        </div>
+                        <div class="article_info_item">
+                            <img src="./images/clock_icon.svg" alt="">
+                            <span>زمان مطالعه: ۳ دقیقه</span>
+                        </div>
+                    </div>
+                    <div class="article_title">
+                        <a href="#">دره ستارگان، سحرآمیزترین مکان جزیره قشم</a>
+                    </div>
+                    <div class="article_excerpt">
+                        آیا تا به حال اسم دره ستارگان به گوشتان خورده است؟ با ما باشید تا ...
+                    </div>
+                </div>
+            </div>
+            <div class="article_mobile_more">
+                <a href="#">+ همه مطالب</a>
+            </div>
+        </div>
+    </div>
+    <div id="gallery" class="container_fluid">
+        <div class="container">
+            <div class="gallery_tabs_wrapper">
+                <div class="gallery_tab active" data-tab="1">همه تصاویر</div>
+                <div class="gallery_tab" data-tab="2">اتاق‌ها</div>
+                <div class="gallery_tab" data-tab="3">لابی</div>
+                <div class="gallery_tab" data-tab="4">رستوران</div>
+                <div class="gallery_tab" data-tab="5">نمای بیرونی</div>
+                <div class="gallery_tab" data-tab="6">کافی‌شاپ</div>
+                <div class="gallery_tab" data-tab="7">باشگاه ورزشی</div>
+                <div class="gallery_tab" data-tab="8">خشکشویی</div>
+            </div>
+            <div class="gallery_content_wrapper">
+                <div class="gallery_content active" data-content="1">
+                    <div class="gallery_image">
+                        <img src="./images/content/gal1.jpg" alt="">
+                    </div>
+                    <div class="gallery_image">
+                        <img src="./images/content/gal2.jpg" alt="">
+                    </div>
+                    <div class="gallery_image">
+                        <img src="./images/content/gal3.jpg" alt="">
+                    </div>
+                    <div class="gallery_image">
+                        <img src="./images/content/gal4.jpg" alt="">
+                    </div>
+                    <div class="gallery_image">
+                        <img src="./images/content/gal5.jpg" alt="">
+                    </div>
+                    <div class="gallery_image">
+                        <img src="./images/content/gal6.jpg" alt="">
+                    </div>
+                </div>
+                <div class="gallery_content" data-content="2">تصاویر اتاق‌ها</div>
+                <div class="gallery_content" data-content="3">لابی تصاویر</div>
+                <div class="gallery_content" data-content="4">رستوران تصاویر</div>
+                <div class="gallery_content" data-content="5">نمای بیرونی تصاویر</div>
+                <div class="gallery_content" data-content="6">کافی‌شاپ تصاویر</div>
+                <div class="gallery_content" data-content="7">باشگاه ورزشی تصاویر</div>
+                <div class="gallery_content" data-content="8">خشکشویی تصاویر</div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div id="main_footer" class="container_fluid">
+            <div class="container">
+                <div class="footer_section">
+                    <div class="footer_logo">
+                        <img src="./images/peaplelogo.png" alt="">
+                        <span>هتل ‌آرتا</span>
+                    </div>
+                    <div class="footer_info">
+                        <ul>
+                            <li>
+                                <span>آدرس:</span>
+                                قشم، بلوار شهید بهشتی، هتل آرتا
+                            </li>
+                            <li>
+                                <span>تلفن هتل:</span>
+                                076 35244976-83
+                            </li>
+                            <li>
+                                <span>تلفن رزرو:</span>
+                                <a href="tel:09177698482">09177698482</a>
+                            </li>
+                            <li>
+                                <span>پست الکترونیکی:</span>
+                                <a href="mailto:info@artahotel.com">info@artahotel.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer_section footer_links_section">
+                    <div class="footer_links">
+                        <div class="footer_links_head">هتل آرتا</div> 
+                        <ul>
+                            <li>
+                                <a href="#">درباره هتل</a>
+                            </li>
+                            <li>
+                                <a href="#">رزرو آنلاین</a>
+                            </li>
+                            <li>
+                                <a href="#">تور مجازی</a>
+                            </li>
+                            <li>
+                                <a href="#">فرصت‌های شغلی</a>
+                            </li>
+                            <li>
+                                <a href="#">تماس با ما</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer_links">
+                        <div class="footer_links_head">امکانات هتل</div> 
+                        <ul>
+                            <li>
+                                <a href="#">اتاق‌ها و سوئیت‌ها</a>
+                            </li>
+                            <li>
+                                <a href="#">رستوران مانگو</a>
+                            </li>
+                            <li>
+                                <a href="#">کافی‌شاپ افرا</a>
+                            </li>
+                            <li>
+                                <a href="#">باشگاه ورزشی</a>
+                            </li>
+                            <li>
+                                <a href="#">دیگر امکانات</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer_links">
+                        <div class="footer_links_head">جزیره قشم</div> 
+                        <ul>
+                            <li>
+                                <a href="#">آشنایی با قشم</a>
+                            </li>
+                            <li>
+                                <a href="#">اطلاعات پرواز</a>
+                            </li>
+                            <li>
+                                <a href="#">گردشگری جزیره</a>
+                            </li>
+                            <li>
+                                <a href="#">جشنواره‌ها</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer_section footer_map_section">
+                    <a href="#">
+                        <img src="./images/content/map.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="end_footer" class="container_fluid">
+            <div class="container">
+                <div class="copyright">
+                    تمامی حقوق این وب‌سایت متعلق به هتل‌آرتا می‌باشد
+                </div>
+                <div class="footer_socials">
+                    <a href="#">
+                        <img src="./images/instagram_icon_footer.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="./images/telegram_icon_footer.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="./images/whatsapp_icon_footer.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/script.js"></script>
+</body>
+</html>
