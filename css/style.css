@@ -863,8 +863,8 @@ ul.header_main_menu li a {
     height: auto;
 }
 
-#gallery:hover .gallery_image:not( :hover ) {
-    filter: blur(2px);
+#gallery .container:hover .gallery_image:not( :hover ) {
+    filter: blur(2px) sepia(0.5);
     transition: 313ms;
 }
 /* FOOTER */
