@@ -329,12 +329,13 @@ ul.header_main_menu li a {
     border: none;
     border-radius: 10px;
     white-space: nowrap;
-    display: flex;
     align-items: center;
     cursor: pointer;
     justify-content: center;
     display: block;
-    width: 100%;
+    width: auto;
+    margin-left: 7%;
+    float: left;
 }
 
 #reservation_shortcut_form button img {
