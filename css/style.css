@@ -302,9 +302,10 @@ ul.header_main_menu li a {
 }
 
 .reservation_shortcut {
-    background-color: #fff;
-    border-radius: 15px;
-    position: absolute;
+	background-color: #fffa;
+	border-radius: 15px;
+	position: absolute;
+	backdrop-filter: blur(4px);
 }
 
 .reservation_shortcut_field {
@@ -369,10 +370,10 @@ ul.header_main_menu li a {
     font-size: 5px;
 }
 .reservation_shortcut_field label {
-    display: block;
-    color: #B49975;
-    font-size: 14px;
-    margin-bottom: 5px;
+	display: block;
+	color: #B46675;
+	font-size: 14px;
+	margin-bottom: 5px;
 }
 
 .reservation_shortcut_input {
@@ -385,7 +386,9 @@ ul.header_main_menu li a {
 
 /* ABOUT HOTEL */
 #about_hotel {
-    background-color: #EDD2AE;
+	background-color: #EDD2AE;
+	position: relative;
+	z-index: -1;
 }
 
 .about_hotel_wrapper {
