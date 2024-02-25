@@ -389,6 +389,14 @@ ul.header_main_menu li a {
 	background-color: #EDD2AE;
 	position: relative;
 	z-index: -1;
+	overflow: hidden;
+}
+#about_hotel canvas {
+	position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -10;
+    opacity: 0.8;
 }
 
 .about_hotel_wrapper {

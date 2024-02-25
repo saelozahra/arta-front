@@ -1,5 +1,23 @@
 $(document).ready(function ($) {
 
+    if( $('#about_hotel .hover-bg').length ){
+        var podcastGranimInstance = new Granim({
+            element: '#about_hotel .hover-bg',
+            direction: 'left-right',
+            isPausedWhenNotInView: true,
+            states : {
+                "default-state": {
+                    gradients: [
+                        ['#bb9964', '#EDD2AE'],
+                        ['#EDD2AE', '#C0872F'],
+                        ['#B2A278', '#EDD2AE'],
+                    ],
+                    transitionSpeed: 3133,
+                }
+            }
+        });
+    }
+
     if ($('.hotel_rooms_wrapper').length) {
         $('.hotel_rooms_wrapper').slick({
             slidesToShow: 3,
