@@ -295,10 +295,12 @@ ul.header_main_menu li a {
 
 /* RESERVATION */
 #reservation {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	z-index: 9;
+	position: relative;
 }
 
 .reservation_shortcut {
@@ -387,6 +389,7 @@ ul.header_main_menu li a {
 /* ABOUT HOTEL */
 #about_hotel {
 	background-color: #EDD2AE;
+    background-image: url("../images/papyrus.png");
 	position: relative;
 	z-index: -1;
 	overflow: hidden;
