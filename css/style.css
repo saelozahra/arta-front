@@ -84,10 +84,11 @@ a.effect-shine:hover,button.effect-shine:hover,.menu-item a:hover,#hashtags a:ho
 
 
 
-
+body, input, select, option, button{
+    font-family: YekanBakh;
+}
 body {
     margin: 0;
-    font-family: YekanBakh;
 }
 
 .container_fluid {
@@ -321,7 +322,6 @@ ul.header_main_menu li a {
 }
 
 #reservation_shortcut_form button {
-    font-family: YekanBakh;
     background-color: #861290;
     color: #fff;
     padding: 10px 20px;
@@ -341,8 +341,7 @@ ul.header_main_menu li a {
     margin-left: 10px;
 }
 
-#reservation_shortcut_form input {
-    font-family: YekanBakh;
+#reservation_shortcut_form input, #reservation_shortcut_form select {
     font-size: 30px;
     color: #861290;
     border:none;
@@ -353,7 +352,14 @@ ul.header_main_menu li a {
     max-width: 140px;
     padding-right: 10px;
 }
-
+#reservation_shortcut_form select{
+    max-width: unset;
+    width: 100%;
+}
+#reservation_shortcut_form select option{
+    font-family: YekanBakh;
+    font-size: 14px;
+}
 .reservation_shortcut_field label {
     display: block;
     color: #B49975;
