@@ -480,14 +480,11 @@ ul.header_main_menu li a {
 
 /* HOTEL RESTAURANT & COFEESHOP */
 #hotel_restaurant {
-    padding: 120px 0;
-    background-image: url(../images/content/res_cof.jpg);
-}
-
-#hotel_restaurant {
     background-image: url(../images/content/res_cof.jpg);
     background-repeat: no-repeat;
+    padding: 120px 0;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 .hotel_restaurant_wrapper {
