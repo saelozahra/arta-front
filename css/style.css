@@ -793,6 +793,17 @@ ul.header_main_menu li a {
 /* GALLERY */
 #gallery {
     background-color: #430028;
+    position: relative;
+    overflow: hidden;
+    background-image: url("../images/interlaced.png");
+}
+
+#gallery canvas {
+	position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+    opacity: 0.8;
 }
 
 #gallery .container {
@@ -808,7 +819,7 @@ ul.header_main_menu li a {
 }
 
 .gallery_tab {
-    border: 1px solid #861290;
+    border: 1px solid #E7AB5C;
     border-radius: 10px;
     padding: 5px 20px;
     box-sizing: border-box;
@@ -817,11 +828,14 @@ ul.header_main_menu li a {
     font-size: 16px;
     margin: 0 10px;
     cursor: pointer;
+    transition: 110ms;
 }
 
-.gallery_tab.active {
+.gallery_tab.active, .gallery_tab:hover {
     background-color: #E7AB5C;
+    border-color: #E7AB5C;
     color: #430028;
+    transition: 313ms;
 }
 
 .gallery_content {

@@ -1,7 +1,7 @@
 $(document).ready(function ($) {
 
     if( $('#about_hotel .hover-bg').length ){
-        var podcastGranimInstance = new Granim({
+        var aboutGranimInstance = new Granim({
             element: '#about_hotel .hover-bg',
             direction: 'left-right',
             isPausedWhenNotInView: true,
@@ -11,6 +11,24 @@ $(document).ready(function ($) {
                         ['#bb9964', '#EDD2AE'],
                         ['#EDD2AE', '#C0872F'],
                         ['#B2A278', '#EDD2AE'],
+                    ],
+                    transitionSpeed: 2022,
+                }
+            }
+        });
+    }
+
+    if( $('#gallery .hover-bg').length ){
+        var galleryGranimInstance = new Granim({
+            element: '#gallery .hover-bg',
+            direction: 'left-right',
+            isPausedWhenNotInView: true,
+            states : {
+                "default-state": {
+                    gradients: [
+                        ['#430028', '#6B1F4D'],
+                        ['#330420', '#4d022e'],
+                        ['#75174f', '#430028'],
                     ],
                     transitionSpeed: 3133,
                 }
