@@ -852,6 +852,7 @@ ul.header_main_menu li a {
     width: 33.33%;
     padding: 25px;
     box-sizing: border-box;
+    transition: 110ms;
 }
 
 .gallery_image img {
@@ -862,6 +863,10 @@ ul.header_main_menu li a {
     height: auto;
 }
 
+#gallery:hover .gallery_image:not( :hover ) {
+    filter: blur(2px);
+    transition: 313ms;
+}
 /* FOOTER */
 #main_footer {
     background-color: #fff5e4;
