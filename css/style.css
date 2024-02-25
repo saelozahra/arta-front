@@ -308,7 +308,7 @@ ul.header_main_menu li a {
 }
 
 .reservation_shortcut_field {
-    padding: 20px 30px;
+    padding: 18px 8px;
     flex: 1;
 }
 
@@ -349,16 +349,23 @@ ul.header_main_menu li a {
     font-weight: 700;
     width: auto;
     outline: none;
-    max-width: 140px;
+    max-width: 162px;
     padding-right: 10px;
 }
 #reservation_shortcut_form select{
-    max-width: unset;
+    max-width: unset !important;
     width: 100%;
 }
 #reservation_shortcut_form select option{
     font-family: YekanBakh;
     font-size: 14px;
+}
+.dpex.pwt-datepicker-input-element{
+    width: 202px !important;
+    max-width: 100% !important;
+}
+.dpex.pwt-datepicker-input-element::first-letter{
+    font-size: 5px;
 }
 .reservation_shortcut_field label {
     display: block;

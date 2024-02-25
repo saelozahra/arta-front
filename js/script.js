@@ -30,6 +30,12 @@ $(document).ready(function ($) {
 
         });
     }
+
+    $(".dpex").pDatepicker({
+    observer: true,
+    format: 'dddd DD MMMM',
+});
+
 })
 
 
